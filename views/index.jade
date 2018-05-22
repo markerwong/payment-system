@@ -1,0 +1,57 @@
+doctype html
+html
+  head
+    title Payment form
+    link(href="./libs/bootstrap/css/bootstrap.min.css", rel="stylesheet")
+  body
+    div.container
+      div.py-5.text-center
+        h2 Payment Form
+      div.row
+        div.col-md-12
+          form(class="needs-validation")
+            h4.mb-4 Order Session
+            div.row
+              div.col-md-6.mb-4
+                label(for="name") Customer Name
+                input(id="name", name="name", class="form-control", required)
+              div.col-md-6.mb-4
+                label(for="phone") Customer Phone Number
+                input(id="phone", name="phone", class="form-control", required)
+            div.row
+              div.col-md-6.mb-4
+                label(for="currency") Currency
+                select(id="currency", name="currency", class="form-control")
+                  option(value="HKD") HKD
+                  option(value="USD") USD
+                  option(value="AUD") AUD
+                  option(value="EUR") EUR
+                  option(value="JPY") JPY
+                  option(value="CNY") CNY
+              div.col-md-6.mb-4
+                label(for="price") Price
+                input(id="price", name="price", class="form-control", required)
+            hr.mb-4
+            h4.mb-4 Payment Session
+            div.row
+              div.col-md-6.mb-4
+                label(for="cardName") Credit Card Holder Name
+                input(id="cardName", name="cardName", class="form-control", required)
+              div.col-md-6.mb-4
+                label(for="cardNumber") Credit Card Number
+                input(id="cardNumber", name="cardNumber", class="form-control", required)
+            div.row
+              div.col-md-6.mb-4
+                label(for="cardExpiration") Credit Card Expiration
+                input(id="cardExpiration", name="cardExpiration", class="form-control", required)
+              div.col-md-6.mb-4
+                label(for="cardCcv") Credit Card CCV
+                input(id="cardCcv", name="cardCcv", class="form-control", required)
+            hr.mb-4
+            button(id="submit", class="btn btn-primary btn-lg btn-block", type="submit") Submit
+
+    script(src="./libs/jquery.js")
+    script(src="./libs/popper.min.js")
+    script(src="./libs/bootstrap/js/bootstrap.min.js")
+    script(src="./libs/sweetalert2.all.js")
+    script(src="./js/script.js")

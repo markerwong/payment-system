@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Payment Record
+    link(href="./libs/bootstrap/css/bootstrap.min.css", rel="stylesheet")
+  body
+    div.container
+      div.py-5.text-center
+        h2 Payment Record
+      div.row
+        div.col-md-12
+          form(class="needs-validation")
+            h4.mb-4 Search record
+            div.row
+              div.col-md-6.mb-4
+                label(for="name") Customer Name
+                input(id="name", name="name", class="form-control", required)
+              div.col-md-6.mb-4
+                label(for="code") Reference code
+                input(id="code", name="code", class="form-control", required)
+            button(id="submit", class="btn btn-primary btn-lg btn-block", type="submit") Search
+
+    script(src="./libs/jquery.js")
+    script(src="./libs/popper.min.js")
+    script(src="./libs/bootstrap/js/bootstrap.min.js")
+    script(src="./libs/sweetalert2.all.js")
+    script(src="./js/record.js")

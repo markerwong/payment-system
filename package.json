@@ -1,0 +1,31 @@
+{
+  "name": "assignment",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "engines": {
+    "node": ">=8.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "bootstrap": "^4.1.1",
+    "config": "^1.30.0",
+    "credit-card-type": "^7.0.0",
+    "express": "^4.16.3",
+    "express-validator": "^5.2.0",
+    "jade": "^1.11.0",
+    "jquery": "^3.3.1",
+    "mongodb": "^2.2.33",
+    "redis": "^2.8.0",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2",
+    "util": "^0.10.3",
+    "uuid": "^3.2.1"
+  }
+}
