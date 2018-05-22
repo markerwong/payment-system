@@ -8,7 +8,9 @@ A payment system to save data to database and integrate with payment gateway.
 
 ### Payment system
 Payment form URL: `http://localhost:3000/`
+
 Payment record URL: `http://localhost:3000/record`
+
 Port: `3000`
 
 ### Gateway A
