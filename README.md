@@ -36,7 +36,9 @@ Port: `3002`
 npm i
 ```
 
-2. Start server with the script below:
+2. Update `config/default.json` for database and redis config
+
+3. Start server with the script below:
 ```
 npm run start
 ```
